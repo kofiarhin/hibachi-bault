@@ -2,7 +2,8 @@
 type: task-list
 project: Hibachi
 status: active
-updated: 2026-08-03
+updated: 2026-08-09
+source: kofiarhin/ideahub/projects/hibachi.md
 tags:
   - project/hibachi
   - task
@@ -10,31 +11,29 @@ tags:
 
 # Hibachi Tasks
 
-Search tags: #project/hibachi #task #status/active #elevenlabs
+Search tags: #project/hibachi #task #status/active #software-delivery-loop #accessibility
 
 Only current actionable work uses unchecked checkboxes in this note.
 
 ## High priority
 
-- [ ] Commit and push the final local test-only TypeScript correction on `fix/elevenlabs-sole-tts-provider` #priority/high
-- [ ] Run `npm run test:e2e` against the exact final fix branch revision #priority/high
-- [ ] Run `npm run verify:policies` against the exact final fix branch revision #priority/high
-- [ ] Verify one logical assistant response creates exactly one `POST /api/v1/voice/speech` request and one ElevenLabs playback #priority/high
-- [ ] Verify a new response cancels the previous playback and only the latest response continues #priority/high
-- [ ] Verify reload does not replay old responses and offline mode remains text-only #priority/high
-- [ ] Review and merge `fix/elevenlabs-sole-tts-provider` only after final verification evidence is retained #priority/high
-- [ ] Configure `OBSIDIAN_VAULT_PATH` to this vault and verify `Vault Index.md` retrieval #priority/high
+- [ ] Create and review an implementation-ready Software Delivery Loop v1 technical specification #priority/high
+- [ ] Prove Software Delivery Loop v1 end-to-end on one real repository request with exact retained evidence #priority/high
+- [ ] Verify the complete delivery loop can be operated by voice or keyboard without reading terminal output #priority/high
+- [ ] Run the complete native-Windows verification suite against the exact current application revision #priority/high
+- [ ] Reconcile the Hibachi implementation-package state and historical verification evidence with the current Software Delivery Loop v1 direction #priority/high
+- [ ] Configure `OBSIDIAN_VAULT_PATH` to this vault and verify `Vault Index.md`, targeted retrieval, note capture, and the on-demand daily brief #priority/high
 
 ## Medium priority
 
-- [ ] Verify targeted search returns the Working Profile, Projects Index, Hibachi project note, and Engineering Defaults #priority/medium
-- [ ] Validate `npm run hibachi` end-to-end on native Windows with MongoDB, coding CLIs, Git, GitHub CLI, Vercel CLI, `whisper.cpp`, Chrome or Edge, ElevenLabs, and the configured vault #priority/medium
+- [ ] Record keyboard-only, screen-reader-compatible, spoken-progress, cancellation, error-recovery, and no-terminal-reading accessibility evidence #priority/medium
+- [ ] Verify targeted Vault retrieval returns the Working Profile, Projects Index, Hibachi project note, and Engineering Defaults #priority/medium
 - [ ] Verify safe Obsidian note creation and append against a disposable test note #priority/medium
 - [ ] Verify governed overwrite, move, and delete operations create recoverable backups and enforce approval #priority/medium
-- [ ] Decide whether to bundle a compatible redistributable wake-word model or retain push-to-talk only #priority/medium
-- [ ] Review the daily brief against real project task notes and remove noisy task sources #priority/medium
+- [ ] Recheck unresolved ElevenLabs-specific verification items against the exact current application revision before carrying them forward #priority/medium
+- [ ] Decide whether to bundle a compatible redistributable wake-word model or retain push-to-talk as the reliable fallback #priority/medium
 
-## Completed
+## Completed / retained evidence
 
 - [x] Create the local-first Hibachi application repository and implementation foundation
 - [x] Implement the React client, companion service, shared schemas, policies, MongoDB models, and test structure
@@ -44,17 +43,14 @@ Only current actionable work uses unchecked checkboxes in this note.
 - [x] Improve coding-agent readiness detection and subprocess failure diagnostics
 - [x] Replace the initial dashboard with the immersive visualizer and command interface
 - [x] Populate the vault with curated operating context and project routing
+- [x] Merge the strategic Hibachi product PRD through application pull request #9
+- [x] Establish Software Delivery Loop v1 as the active product milestone
 - [x] Implement ElevenLabs TTS with server-side credential isolation and streamed audio
-- [x] Remove browser `SpeechSynthesis` and browser TTS fallback on the fix branch
-- [x] Add bounded logical-response deduplication for WebSocket and HTTP refresh paths
-- [x] Pass local client tests: 12 files and 131 tests
-- [x] Pass local server tests: 13 suites and 398 tests
-- [x] Pass root typecheck after the final test correction
-- [x] Pass lint
-- [x] Pass production build
+- [x] Record local client tests, server tests, root typecheck, lint, and production build evidence for the 2026-08-03 ElevenLabs work
 
 ## Related notes
 
 - [[20 Projects/Hibachi/Project]]
 - [[20 Projects/Hibachi/Logs/2026-08-03 ElevenLabs TTS]]
+- [[20 Projects/Projects Index]]
 - [[Vault Index]]
